@@ -45,8 +45,8 @@ const Content = (props) => {
        setCount(0);
       }, [props.data]);
     useEffect(() => {
-        setKey(Object.keys(props.data[count]));
-        setValue(Object.values(props.data[count]));
+        setKey(Object.keys(dataList[count]));
+        setValue(Object.values(dataList[count]));
       }, [count]);
     return ( 
         <div className="container">

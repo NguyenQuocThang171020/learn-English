@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    height: 65%;
+}
+.view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+}
+.action-more{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.mode{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.render-char{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.char-jp{
+    font-size: 250px;
+}
+.char-vn{
+    color: #18575f;
+    font-size: 150px;
+}

@@ -1,0 +1,14 @@
+.header-container{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #8ee4f0, #f3f6f7);
+}
+p{
+    padding: 0 20px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

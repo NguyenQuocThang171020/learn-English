@@ -47,7 +47,7 @@ const Content = (props) => {
     useEffect(() => {
         setKey(Object.keys(dataList[count]));
         setValue(Object.values(dataList[count]));
-      }, [count]);
+      }, [count,active]);
     return ( 
         <div className="container">
             <div className="view">
@@ -55,8 +55,8 @@ const Content = (props) => {
                     {show ? (<p className='char-vn'>{value}</p>): (<p className='char-jp'>{key}</p>)}
                 </div>
                 <div className="mode">
-                    <button className={active===1 ? "active":'disable'} disabled={type ? true : false} onClick={()=>{randomWord();setActive(1)}}>Random</button>
-                    <button className={active===2 ? "active":'disable'} disabled={type ? false : true} onClick={()=>{autoWord();setActive(2)}}>Auto</button>
+                    <button className={active===2 ? "active":'disable'} disabled={type ? true : false} onClick={()=>{randomWord();setActive(2)}}>Random</button>
+                    <button className={active===1 ? "active":'disable'} disabled={type ? false : true} onClick={()=>{autoWord();setActive(1)}}>Auto</button>
                     <button onClick={()=>learnWord()}>Learn</button>
                 </div>
             </div>
